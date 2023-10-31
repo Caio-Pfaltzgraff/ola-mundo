@@ -1,12 +1,13 @@
-import { Link } from 'react-router-dom'
 import styles from './Menu.module.css'
+import MenuLink from './../MenuLink/index';
 
 export default function Menu() {
+
     return (
         <header>
             <nav className={styles.navegacao}>
-                <Link className={styles.link} to='/'>Início</Link>
-                <Link className={styles.link} to='/sobremim'>Sobre mim</Link>
+                <MenuLink to="/">Início</MenuLink>
+                <MenuLink to="/sobremim">Sobre mim</MenuLink>
             </nav>
         </header>
     )
