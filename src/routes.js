@@ -13,27 +13,13 @@ function AppRoutes() {
       <Routes>
 
         <Route path="/" element={<DefaultPage />}>
-          <Route path="/" element={<Start />} />
+          <Route index element={<Start />} />
           <Route path="/sobremim" element={<AboutMe />} />
         </Route>
 
         <Route path="*" element={<div>Página não encontrada</div>} />
       </Routes>
 
-      {/* 
-      
-      Na rota "/", a estrutura a ser renderizada é:
-      <DefaultPage>
-        <Start />
-      </DefaultPage>
-
-      Na rota "/sobremim", a estrutura a ser renderizada é:
-      <DefaultPage>
-        <AboutMe />
-      </DefaultPage>
-
-      */}
-      
       <Footer />
     </BrowserRouter>
   );
