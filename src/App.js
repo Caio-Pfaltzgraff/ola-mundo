@@ -1,12 +1,13 @@
+import { BrowserRouter } from "react-router-dom";
 import AboutMe from "./pages/aboutme";
 import Start from "./pages/start";
 
-console.log(window.location)
-
-const pagina = window.location.pathname === '/' ? <Start/> : <AboutMe/>
-
 function App() {
-  return pagina;
+  return (
+    <BrowserRouter>
+      
+    </BrowserRouter>
+  );
 }
 
 export default App;
